@@ -17,24 +17,24 @@ install: inc/nin.c enhance/nhan.c leet/nleet.c com/ncom.c clean/nclean.c app/nap
 	$(CC) com/ncom.c -o ncom
 	$(CC) clean/nclean.c -o nclean
 	$(CC) app/napp.c -o napp
-	sudo mv nhance /bin
-	sudo mv ninc /bin
-	sudo mv nleet /bin
-	sudo mv ncom /bin
-	sudo mv nclean /bin
-	sudo mv napp /bin
-	sudo cp rev/nrev.sh /bin/nrev
-	sudo cp wiz/nwiz.sh /bin/nwiz
+	mv nhance /bin
+	mv ninc /bin
+	mv nleet /bin
+	mv ncom /bin
+	mv nclean /bin
+	mv napp /bin
+	cp rev/nrev.sh /bin/nrev
+	cp wiz/nwiz.sh /bin/nwiz
 	mkdir -p /var/lib/narthex/
 	cp wiz/elder.txt /var/lib/narthex/
-	sudo cp enhance/nhance.1 $(MD)
-	sudo cp inc/ninc.1 $(MD)
-	sudo cp leet/nleet.1 $(MD)
-	sudo cp com/ncom.1 $(MD)
-	sudo cp clean/nclean.1 $(MD)
-	sudo cp app/napp.1 $(MD)
-	sudo cp rev/nrev.1 $(MD)
-	sudo mandb
+	cp enhance/nhance.1 $(MD)
+	cp inc/ninc.1 $(MD)
+	cp leet/nleet.1 $(MD)
+	cp com/ncom.1 $(MD)
+	cp clean/nclean.1 $(MD)
+	cp app/napp.1 $(MD)
+	cp rev/nrev.1 $(MD)
+	mandb
 
 uninstall: /bin/ninc /bin/nhance /bin/nrev /bin/nleet /bin/ncom /bin/nclean /bin/napp /bin/nwiz $(MD)ninc.1 $(MD)nhance.1 $(MD)nrev.1 $(MD)nleet.1 $(MD)ncom.1 $(MD)nclean.1 $(MD)napp.1
 	rm /bin/ninc $(MD)ninc.1
