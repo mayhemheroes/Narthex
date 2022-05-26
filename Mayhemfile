@@ -1,5 +1,5 @@
 project: rnshah9/narthex
-target: narthex
+target: nhance
 
 cmds:
   - cmd: /usr/bin/nhance @@
