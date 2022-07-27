@@ -2,4 +2,4 @@ project: narthex
 target: nhance
 
 cmds:
-  - cmd: /usr/bin/nhance @@
+  - cmd: /nhance @@
