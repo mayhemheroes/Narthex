@@ -1,0 +1,5 @@
+project: narthex
+target: nhance
+
+cmds:
+  - cmd: /nhance @@
